@@ -60,7 +60,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
             receiver_email = row["Email Address"]
             Name = row["Name"]
 
-            message["To"] = receiver_email
+            message["Bcc"] = receiver_email
 
             # Turn these into plain/html MIMEText objects
             part1 = MIMEText(text, "plain")
