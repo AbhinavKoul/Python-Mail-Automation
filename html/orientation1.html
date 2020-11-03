@@ -5,7 +5,7 @@
 	</head>
 	<body style="background-color:#ede8e8;padding:10px;font-family:'Arial'">
 		<div style="padding:50px;">
-			<p> Hi (insert name), </p> <br>
+			<p> Hi {{ name }}, </p> <br>
 
 			<p>
 				Thank you for booking your slot for the Orientation session of the only Student Satellite Team of RIT- S.T.A.R.D.U.S.T!<br><br>
@@ -15,7 +15,7 @@
 				You can read more about our team and the various Subsystems centered around our mission in the brochure attached below:
 			</p>
 			<br>
-			<img src="../Images/img.jpg" alt="brochure" style="margin-left:auto;
+			<img src="cid:image1" alt="brochure" style="margin-left:auto;
 			margin-right:auto;
 			display:block;
 			height:600px;
@@ -23,7 +23,7 @@
 		<br>
 		<br>
 		<div style="text-align:center;">
-		<a href="#" class="button" style="background-color: #9966ff;
+		<a href={{ meet_link }} class="button" style="background-color: #9966ff;
 			  border: none;
 			  color: white;
 			  padding: 20px 25px;
@@ -34,7 +34,7 @@
 			  margin: 4px 2px;
 			  border-radius:12px;
 			cursor: pointer;"> Click to join the meeting </a><br>
-		<p><i> Alternatively, click on this link to join:<br><a> (meet link)</i> </a> 
+		<p><i> Alternatively, click on this link to join:<br><a href={{ meet_link }}> Join Meeting</i> </a> 
 		
 		</div>
 		<br>
@@ -43,12 +43,12 @@
 
 		<p><br>If you need any clarification you can get in touch with us via this email and we will try to respond to it as soon as possible! <br> <br><br>		
 
-		Hope to see you soon (insert name)! <br><br>
+		Hope to see you soon {{ name }}! <br><br>
 
 		Team Stardust 
 		<br>
 		<br>
-		<img src="../Images/stardust-logo.png" style="height:90px;width:90px;">
+		<img src="cid:logo" style="height:90px;width:90px;">
 
 		</div>
 	</body>

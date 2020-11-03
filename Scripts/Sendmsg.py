@@ -9,6 +9,7 @@ import os
 html = """\
 <html>
 	<head> 
+		<style type="text/css"> p{text-align:center;} </style>
 		<title> Orientation </title>
 	</head>
 	<body style="background-color:#ede8e8;padding:10px;font-family:'Arial'">
@@ -46,23 +47,17 @@ html = """\
 		
 		</div>
 		<br>
-		We request you to make it on time so that we can confirm all systems before Launch<br>
-			<p style="text-align:center;color:#3792cb">Lift Off!!!!!!!<br> at 7 pm I.S.T</p><br>
+			<p>We request you to make it on time so that we can confirm all systems before Launch<br></p>
+			<p style="color:#3792cb">Lift Off!!!!!!!<br> at 7 pm I.S.T</p><br>
 
-		<p style="text-align:center;"><br>If you need any clarification you can get in touch with us via this email and we will try to respond to it as soon as possible! <br> <br><br>		
+		<p><br>If you need any clarification you can get in touch with us via this email and we will try to respond to it as soon as possible! <br> <br><br>		
 
 		Hope to see you soon {{ name }}! <br><br>
 
-		All the best,
-		The Stardust Recruiting Team
-
+		Team Stardust 
 		<br>
 		<br>
 		<img src="cid:logo" style="height:90px;width:90px;">
-
-		<br>
-		Want to sneak a backstage peek? Follow Life at Stardust
-		on <a href=https://www.linkedin.com/company/rit-stardust><i>LinkedIn</i></a>, <a href="https://www.instagram.com/rit_stardust"><i>Instagram</i></a>, and <a href ="https://www.youtube.com/channel/UC61xGOFapcIeAWdQvtCffJw"> <i>Youtube</i></a>
 
 		</div>
 	</body>
