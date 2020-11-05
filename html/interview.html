@@ -1,0 +1,79 @@
+<html>
+	<head> <title> Interview </title> 
+		<style>
+		p{
+		text-align:center;
+		}
+		li { margin:10px;} 
+		a.button{
+			display:inline-block;
+			padding: 20px 25px;
+			margin: 1em 2em;
+			font-size: 1.5em;
+			border-radius:5px;
+			box-sizing: border-box;
+			text-decoration:none;
+			text-align:center;
+			font-family:'Roboto',sans-serif;
+			text-transform:uppercase;
+			font-weight:400;
+			color:#FFFFFF;
+			background-color:#3B6AA0;
+			box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	
+			}
+		a.button:active{
+			top:0.1em;
+			}
+		@media all and (max-width:50em){
+			a.button{
+			display:block;
+				}
+			}
+		</style>
+	</head>
+	<body style="background-color:#DCDFEE;font-family:'Verdana';">
+	<div style="padding:30px;">
+		
+			<p>Hi {{ name }},  </p> <br>
+			
+			<p> Thank you for registering with us! Here are some instructions to keep in mind before proceeding for the interviews - <br><br> </p>
+			
+				<div style="background-color:#D7D9E7;text-align:left;padding:20px;margin-left:3em;margin-right:3em;">
+				
+				<ol start="0">
+
+				<li> This mail is to notify you about the date, day and time of your interview(s) </li>
+				<li> You will be sent 1 or more group links through this mail. You must join all of those groups </li>
+				<li> On the groups, you will recieve meeting links of the subsystems interviews that you will be appearing for 
+				in that particular time slot. You will also be given a rough timing at which you can actually join the interview meet </li>
+				<li> We have tried our best to accomodate your interviews within one slot, however it is not possible to do the same for 
+				all participants. </li>
+				<li> Please try to adhere to these timings. We can change your interview slots only in extreme cases </li>
+				
+				</ol>
+				
+				</div>
+			<br>
+			<div style="text-align:center;">
+			<p> Use the links below to join the respective group(s)<br><br> </p>
+			
+			<a href={{group-link-1}} class="button">Group-1</a>
+			<a href={{ group-link-2}} class="button">Group-2</a>
+			
+			<p style="font-size:75%"><i>Please note that you may have to join <b>one</b> or <b> both of the groups </b>, depending on which buttons are active </i></p>
+			</div>
+			<br>
+			
+			
+			<p><br>If you need any clarification you can get in touch with us via this email and we will try to respond to it as soon as possible! <br> <br><br>		
+
+		Hope to see you soon {{ name }}! <br><br>
+
+		Team Stardust 
+		<br>
+		<br>
+		<img src="cid:logo" style="height:90px;width:90px;margin-left:auto; margin-right:auto; display:block;">
+	</div>
+	</body>
+</html>
